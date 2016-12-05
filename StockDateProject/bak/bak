@@ -1,0 +1,64 @@
+		if(currIndex==0 ){
+			/**标记收盘价*/
+			dateRptCfgBean.setMarkClosePrice(Double.parseDouble(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_RPT_MARK_CLOSE_PRICE"))))));
+			/**当天偏离值 (区间的最高/低值)*/
+			dateRptCfgBean.setAbsPriceOfToday(Double.parseDouble(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_RPT_ABS_PRICE"))))));
+			/**5日相差日数*/
+			dateRptCfgBean.setDayOfWarning5(Integer.parseInt(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_RPT_WARNING_5"))))));
+			/**5日偏离值(收盘价)*/
+			dateRptCfgBean.setDayOfWarning5ClosePrice(Double.parseDouble(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_RPT_WARNING_5_VALUE"))))));
+			/**8日相差日数*/
+			dateRptCfgBean.setDayOfWarning8(Integer.parseInt(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_RPT_WARNING_8"))))));
+			/**8日偏离值(收盘价)*/
+			dateRptCfgBean.setDayOfWarning8ClosePrice(Double.parseDouble(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_RPT_WARNING_8_VALUE"))))));
+			/**13日相差日数*/
+			dateRptCfgBean.setDayOfWarning13(Integer.parseInt(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_RPT_WARNING_13"))))));
+			/**13日偏离值(收盘价)*/
+			dateRptCfgBean.setDayOfWarning13ClosePrice(Double.parseDouble(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_RPT_WARNING_13_VALUE"))))));
+			/**21日相差日数*/
+			dateRptCfgBean.setDayOfWarning21(Integer.parseInt(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_RPT_WARNING_21"))))));
+			/**21日偏离值(收盘价)*/
+			dateRptCfgBean.setDayOfWarning21ClosePrice(Double.parseDouble(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_RPT_WARNING_21_VALUE"))))));
+			/**34日相差日数*/
+			dateRptCfgBean.setDayOfWarning34(Integer.parseInt(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_RPT_WARNING_34"))))));
+			/**34日偏离值(收盘价)*/
+			dateRptCfgBean.setDayOfWarning34ClosePrice(Double.parseDouble(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_RPT_WARNING_34_VALUE"))))));
+			/**55日相差日数*/
+			dateRptCfgBean.setDayOfWarning55(Integer.parseInt(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_RPT_WARNING_55"))))));
+			/**55日偏离值(收盘价)*/
+			dateRptCfgBean.setDayOfWarning55ClosePrice(Double.parseDouble(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_RPT_WARNING_55_VALUE"))))));
+			/**89日相差日数*/
+			dateRptCfgBean.setDayOfWarning89(Integer.parseInt(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_RPT_WARNING_89"))))));
+			/**89日偏离值(收盘价)*/
+			dateRptCfgBean.setDayOfWarning89ClosePrice(Double.parseDouble(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_RPT_WARNING_89_VALUE"))))));
+			/**预置区间顶*/
+			dateRptCfgBean.setPriceWarningHigh(Double.parseDouble(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_PRT_WARNING_DIY_HIGH"))))));
+			/**预置区间底*/
+			dateRptCfgBean.setPriceWarningLow(Double.parseDouble(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_PRT_WARNING_DIY_LOW"))))));
+			/** 区间最小量提醒*/
+			dateRptCfgBean.setWarningMinVol(Double.parseDouble(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_PRT_WARNING_MIN_VOL"))))));
+			/** 区间最低价格 */
+			dateRptCfgBean.setWarningMinPrice(Double.parseDouble(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_PRT_WARNING_MIN_PRICE"))))));
+			/** 箱体顶 */
+			dateRptCfgBean.setBoxTopPrice(Double.parseDouble(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_PRT_BOX_TOP"))))));
+			/** 3/4 箱体 */
+			dateRptCfgBean.setBox3_4Price(Double.parseDouble(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_PRT_BOX_3_4"))))));
+			/** 箱体中位线*/
+			dateRptCfgBean.setBoxMiddlePrice(Double.parseDouble(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_PRT_BOX_MIDDLE"))))));
+			/** 1/4 箱体*/
+			dateRptCfgBean.setBox1_4Price(Double.parseDouble(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_PRT_BOX_1_4"))))));
+			/** 箱体箱底*/
+			dateRptCfgBean.setBoxLowPrice(Double.parseDouble(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_PRT_BOX_LOW"))))));
+			/** 当前价格与箱体的位置 */
+			dateRptCfgBean.setCurrentPriceInBox(Double.parseDouble(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_PRT_BOX_NOW"))))));
+			/** 自定义价格1*/
+			dateRptCfgBean.setDiyPrice1(Double.parseDouble(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_PRT_DIY_PRICE_1"))))));
+			/** 自定义价格2*/
+			dateRptCfgBean.setDiyPrice2(Double.parseDouble(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_PRT_DIY_PRICE_2"))))));
+			/** 自定义价格3*/
+			dateRptCfgBean.setDiyPrice3(Double.parseDouble(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_PRT_DIY_PRICE_3"))))));
+			/** 自定义价格4*/
+			dateRptCfgBean.setDiyPrice4(Double.parseDouble(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_PRT_DIY_PRICE_4"))))));
+			/** 自定义价格5*/
+			dateRptCfgBean.setDiyPrice5(Double.parseDouble(TextUtil.nullValueConvert(dateRow.get(convertColumnName(ConfigHelper.getDefKey("DAY_PRT_DIY_PRICE_5"))))));
+		}
